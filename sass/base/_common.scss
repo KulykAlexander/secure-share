@@ -1,13 +1,15 @@
 body {
-  width: 1920px;
-  color: var(--main-color);
+  // width: 1920px;
+  // color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
 }
-
+// main {
+//   background: #f7f9fe;
+// }
 .section {
   display: block;
-  margin: 0 auto;
-  padding: 0 auto;
+  // margin: 0 auto;
+  // padding: 0 auto;
   // padding-top: 60px;
   // padding-bottom: 60px;
   // @include desktop {
@@ -15,7 +17,7 @@ body {
   //     padding-bottom: 94px;
   // }
   text-align: center;
-  background: #f7f9fe;
+  background: var(--light-bg);
 }
 
 .link {
@@ -25,7 +27,8 @@ body {
   list-style: none;
 }
 .form {
-  display: flex;
+  display: block;
+  margin: 0 auto;
   padding: 40px 38px;
 
   background: rgba(255, 255, 255, 0.4);
@@ -33,10 +36,15 @@ body {
   border-radius: 10px;
 }
 .btn {
+  width: 385px;
+  height: 45px;
   font-family: inherit;
-  border: 2px solid var(--accent-color);
-  border-radius: 100px;
-  background-color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
 }
 .is-hidden {
   opacity: 0;

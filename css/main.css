@@ -1,3 +1,12 @@
+:root {
+  --black: #314052;
+  --light-bg: #f7f9fe;
+  --grey: #aab0be;
+  --stoke: #dce2f1;
+  --blue: #1e65e1;
+  --midle-grey: #73859b;
+}
+
 h1,
 h2,
 h3,
@@ -30,17 +39,13 @@ img {
 }
 
 body {
-  width: 1920px;
-  color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
 }
 
 .section {
   display: block;
-  margin: 0 auto;
-  padding: 0 auto;
   text-align: center;
-  background: #f7f9fe;
+  background: var(--light-bg);
 }
 
 .link {
@@ -52,7 +57,8 @@ body {
 }
 
 .form {
-  display: flex;
+  display: block;
+  margin: 0 auto;
   padding: 40px 38px;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 22px 26px rgba(199, 207, 227, 0.08);
@@ -60,10 +66,15 @@ body {
 }
 
 .btn {
+  width: 385px;
+  height: 45px;
   font-family: inherit;
-  border: 2px solid var(--accent-color);
-  border-radius: 100px;
-  background-color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
 }
 
 .is-hidden {
@@ -82,36 +93,149 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+
 .header {
   height: 94px;
   padding-top: 34px;
   text-align: center;
   background: #f7f9fe;
-  border-bottom: 1px solid #dce2f1;
+  border-bottom: 1px solid var(--stoke);
 }
 
 .registration {
   padding-top: 100px;
-  padding-right: 730px;
   padding-bottom: 101px;
-  padding-left: 730px;
 }
 
 .registration-form {
+  width: 461px;
+}
+
+.registration-form .registration-data {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 460px;
+  margin-bottom: 17px;
+}
+
+.registration-form input {
+  width: 385px;
+  height: 45px;
+  padding: 12px 17px 14px 13px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+  background: #ffffff;
+  border: 1px solid var(--stoke);
+  border-radius: 6px;
+}
+
+.registration-form input:focus {
+  outline: 1px solid var(--grey);
+}
+
+.registration-form input::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+}
+
+.registration-form .password {
+  position: relative;
+}
+
+.registration-form .password .password-btn {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url(../images/pass-close.svg);
+  background-color: #ffffff;
+}
+
+.registration-form .password .password-btn:active {
+  background-image: url(../images/pass-open.svg);
+}
+
+.pre-submit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.pre-submit .pre-submit-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--black);
+}
+
+.pre-submit .pre-submit-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--blue);
+}
+
+.pre-submit .pre-submit-link:hover, .pre-submit .pre-submit-link:focus {
+  text-decoration: underline;
+}
+
+.pre-submit .pre-submit-link:active {
+  color: #0d4ab4;
+}
+
+.pre-submit .pre-submit-link:disabled {
+  color: var(--grey);
+}
+
+.registration-btn {
+  color: var(--light-bg);
+  background: var(--blue);
+}
+
+.registration-btn:hover, .registration-btn:focus {
+  background: #3d7ff2;
+}
+
+.registration-btn:active {
+  background: #0d4ab4;
+}
+
+.registration-btn:disabled {
+  background: var(--grey);
 }
 
 .footer .container {
+  height: 68px;
+  padding-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #f7f9fe;
-  background: #314052;
+  color: var(--light-bg);
+  background: var(--black);
 }
 /*# sourceMappingURL=main.css.map */

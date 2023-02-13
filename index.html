@@ -28,30 +28,41 @@
       <section class="section registration">
         <form class="registration-form form">
           <h2 class="title">Register</h2>
-          <label for="">
-            <input type="email" />
-          </label>
-          <label for="">
-            <input type="email" />
-          </label>
-          <label for="">
-            <input type="email" />
-          </label>
-          <label for="">
-            <input type="email" />
-          </label>
-          <label for="">
-            <input type="email" />
-          </label>
-          <label for="">
-            <input type="email" />
-          </label>
-          <label for="">
-            <input type="email" />
-          </label>
-          <p>Do you have an Account</p>
-          <p><a href="" class="link">Log in</a></p>
-          <button type="submit">Register</button>
+          <div class="registration-data">
+            <label for="">
+              <input type="email" placeholder="Email*" />
+            </label>
+            <label for="">
+              <input type="text" placeholder="First Name*" />
+            </label>
+            <label for="">
+              <input type="text" placeholder="Last Name*" />
+            </label>
+            <label for="">
+              <input type="text" placeholder="Company*" />
+            </label>
+            <label for="">
+              <input type="tel" placeholder="Phone Number*" />
+            </label>
+            <label for="">
+              <div class="password">
+                <input type="password" placeholder="Password*" />
+                <button type="button" class="password-btn"></button>
+              </div>
+            </label>
+            <label for="">
+              <div class="password">
+                <input type="password" placeholder="Confirm Password*" />
+                <button type="button" class="password-btn"></button>
+              </div>
+            </label>
+          </div>
+          <div class="pre-submit">
+            <p class="pre-submit-text">Do you have an Account</p>
+            <a href="" class="pre-submit-link link">Log in</a>
+          </div>
+
+          <button type="submit" class="registration-btn btn">Register</button>
         </form>
       </section>
     </main>

@@ -1,0 +1,49 @@
+.btn {
+  width: 385px;
+  height: 45px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+.registration-btn {
+  color: var(--light-bg);
+  background: var(--blue);
+  &:hover,
+  &:focus {
+    background: #3d7ff2;
+  }
+  &:active {
+    background: #0d4ab4;
+  }
+  &:disabled {
+    background: var(--grey);
+  }
+}
+.back-btn {
+  margin-top: 16px;
+  background: #fff;
+  border: 2px solid #1e65e1;
+  .back-link {
+    color: var(--blue);
+  }
+  &:hover,
+  &:focus {
+    background: #bed2f4;
+  }
+  &:active {
+    background: #89b0f4;
+  }
+  &:disabled {
+    border-color: var(--grey);
+  }
+  &:disabled .back-link {
+    color: var(--grey);
+  }
+}

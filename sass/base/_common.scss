@@ -26,26 +26,7 @@ body {
 .list {
   list-style: none;
 }
-.form {
-  display: block;
-  margin: 0 auto;
-  padding: 40px 38px;
 
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 4px 22px 26px rgba(199, 207, 227, 0.08);
-  border-radius: 10px;
-}
-.btn {
-  width: 385px;
-  height: 45px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  letter-spacing: 0.04em;
-  border-radius: 6px;
-}
 .is-hidden {
   opacity: 0;
   visibility: hidden;

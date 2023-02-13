@@ -12,37 +12,7 @@
     gap: 15px;
     margin-bottom: 17px;
   }
-  input {
-    width: 385px;
-    height: 45px;
-    padding: 12px 17px 14px 13px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.04em;
-
-    color: var(--grey);
-
-    background: #ffffff;
-
-    border: 1px solid var(--stoke);
-    border-radius: 6px;
-    &:focus {
-      outline: 1px solid var(--grey);
-    }
-    &::placeholder {
-      font-family: inherit;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.9;
-      letter-spacing: 0.04em;
-
-      color: var(--grey);
-    }
-  }
   .password {
     position: relative;
     .password-btn {
@@ -90,19 +60,5 @@
     &:disabled {
       color: var(--grey);
     }
-  }
-}
-.registration-btn {
-  color: var(--light-bg);
-  background: var(--blue);
-  &:hover,
-  &:focus {
-    background: #3d7ff2;
-  }
-  &:active {
-    background: #0d4ab4;
-  }
-  &:disabled {
-    background: var(--grey);
   }
 }

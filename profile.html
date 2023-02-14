@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Share</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">Secure Share</div>
+    </header>
+    <main>
+      <section class="section registration">
+        <div class="container">
+          <form class="registration-form form">
+            <h2 class="title">Profile Info</h2>
+            <div class="registration-data">
+              <div class="profile-fild">
+                <label for=""
+                  >First Name*
+                  <input type="text" placeholder="Ozzy" required />
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >Last Name*
+                  <input type="text" placeholder="Osbourne" required />
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >Company Name*
+                  <input type="text" placeholder="Black Sabbath" required />
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >Phone Number
+                  <input type="tel" placeholder="+380| 123 4567" required />
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >Email*
+                  <input type="email" placeholder="osbourne@gmail.com" required />
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >Old Password
+                  <div class="password">
+                    <input type="password" placeholder="Old Password*" required />
+                    <button type="button" class="password-btn"></button>
+                  </div>
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >New Password
+                  <div class="password">
+                    <input type="password" placeholder="New Password*" required />
+                    <button type="button" class="password-btn"></button>
+                  </div>
+                </label>
+              </div>
+              <div class="profile-fild">
+                <label for=""
+                  >Confirm New Password
+                  <div class="password">
+                    <input type="password" placeholder="Confirm New Password*" required />
+                    <button type="button" class="password-btn"></button>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="registration-btn btn">Save</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">&#169; 2023 - SecureShare.WebApplication - Privacy Policy</div>
+    </footer>
+  </body>
+</html>

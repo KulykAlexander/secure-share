@@ -1,7 +1,18 @@
 .registration .container {
-  padding-top: 100px;
-
-  padding-bottom: 101px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
 }
 .registration-form {
   width: 461px;

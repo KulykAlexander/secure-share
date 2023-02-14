@@ -82,6 +82,15 @@ main {
   border-radius: 10px;
 }
 
+.form label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+
 .form input {
   width: 385px;
   height: 45px;
@@ -152,6 +161,10 @@ main {
   background: var(--grey);
 }
 
+.registration-btn .log-link {
+  color: var(--light-bg);
+}
+
 .back-btn {
   margin-top: 16px;
   background: #fff;
@@ -187,8 +200,29 @@ main {
 }
 
 .registration .container {
-  padding-top: 100px;
-  padding-bottom: 101px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .registration .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .registration .container {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
 }
 
 .registration-form {

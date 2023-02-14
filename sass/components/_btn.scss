@@ -25,6 +25,9 @@
   &:disabled {
     background: var(--grey);
   }
+  .log-link {
+    color: var(--light-bg);
+  }
 }
 .back-btn {
   margin-top: 16px;

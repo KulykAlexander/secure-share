@@ -235,6 +235,118 @@ main {
   border-bottom: 1px solid var(--stoke);
 }
 
+.header-profile .container {
+  display: flex;
+  align-items: center;
+  height: 94px;
+  padding-top: 24px;
+  padding-right: 5px;
+  padding-bottom: 18px;
+  padding-left: 5px;
+  background: #f7f9fe;
+  border-bottom: 1px solid var(--stoke);
+}
+
+@media screen and (min-width: 768px) {
+  .header-profile .container {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-profile .container {
+    padding-right: 67px;
+    padding-left: 67px;
+  }
+}
+
+.logo {
+  display: block;
+  margin-right: 45px;
+}
+
+@media screen and (min-width: 1366px) {
+  .logo {
+    margin-right: 90px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu .menu-nav {
+  display: flex;
+}
+
+.menu .nav-list {
+  display: flex;
+  gap: 26px;
+}
+
+@media screen and (min-width: 1366px) {
+  .menu .nav-list {
+    gap: 36px;
+  }
+}
+
+.menu .prof-info {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.menu .user {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.menu .user .user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+.menu .user .user-icon span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.logout-btn {
+  display: flex;
+  gap: 10px;
+  font-family: inherit;
+  border: none;
+  background: var(--light-bg);
+  cursor: pointer;
+}
+
+.logout-btn .logout-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/logout.svg);
+}
+
 .registration .container {
   padding-top: 15px;
   padding-bottom: 16px;
@@ -388,6 +500,12 @@ main {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .profile-form .profile-data {
+    gap: 28px;
+  }
+}
+
 .profile-form .profile-fild {
   display: flex;
   flex-direction: column;
@@ -413,40 +531,6 @@ main {
 
 .profile-form .password .password-btn:active {
   background-image: url(../images/pass-open.svg);
-}
-
-.pre-submit {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.pre-submit .pre-submit-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--black);
-}
-
-.pre-submit .pre-submit-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--blue);
-}
-
-.pre-submit .pre-submit-link:hover, .pre-submit .pre-submit-link:focus {
-  text-decoration: underline;
-}
-
-.pre-submit .pre-submit-link:active {
-  color: #0d4ab4;
-}
-
-.pre-submit .pre-submit-link:disabled {
-  color: var(--grey);
 }
 
 .footer .container {

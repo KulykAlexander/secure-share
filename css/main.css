@@ -98,7 +98,7 @@ main {
 }
 
 .form input {
-  width: 350px;
+  width: 340px;
   height: 45px;
   padding: 12px 17px 14px 13px;
   font-style: normal;
@@ -143,7 +143,7 @@ main {
 }
 
 .btn {
-  width: 350px;
+  width: 340px;
   height: 45px;
   font-family: inherit;
   font-weight: 600;

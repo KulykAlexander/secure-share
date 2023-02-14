@@ -84,6 +84,12 @@ main {
 
 @media screen and (min-width: 768px) {
   .form {
+    padding: 30px 8px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .form {
     padding: 40px 38px;
   }
 }
@@ -113,6 +119,12 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .form input {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
   .form input {
     width: 385px;
   }
@@ -157,6 +169,12 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .btn {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
   .btn {
     width: 385px;
   }
@@ -276,6 +294,124 @@ main {
 }
 
 .registration-form .password .password-btn:active {
+  background-image: url(../images/pass-open.svg);
+}
+
+.pre-submit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.pre-submit .pre-submit-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--black);
+}
+
+.pre-submit .pre-submit-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--blue);
+}
+
+.pre-submit .pre-submit-link:hover, .pre-submit .pre-submit-link:focus {
+  text-decoration: underline;
+}
+
+.pre-submit .pre-submit-link:active {
+  color: #0d4ab4;
+}
+
+.pre-submit .pre-submit-link:disabled {
+  color: var(--grey);
+}
+
+.profile .container {
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .profile .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .profile .container {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
+}
+
+.profile-form {
+  width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-form {
+    width: 740px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .profile-form {
+    width: 874px;
+  }
+}
+
+.profile-form .profile-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-form .profile-data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.profile-form .profile-fild {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  grid: 15px;
+}
+
+.profile-form .password {
+  position: relative;
+}
+
+.profile-form .password .password-btn {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url(../images/pass-close.svg);
+  background-color: #ffffff;
+}
+
+.profile-form .password .password-btn:active {
   background-image: url(../images/pass-open.svg);
 }
 

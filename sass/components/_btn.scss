@@ -12,6 +12,9 @@
 
   cursor: pointer;
   @include tablet {
+    width: 350px;
+  }
+  @include desktop {
     width: 385px;
   }
 }

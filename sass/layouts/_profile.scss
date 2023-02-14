@@ -1,0 +1,66 @@
+.profile .container {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
+}
+.profile-form {
+  width: 350px;
+
+  @include tablet {
+    width: 740px;
+  }
+  @include desktop {
+    width: 874px;
+  }
+  .profile-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 17px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    @include desktop {
+      gap: 28px;
+    }
+  }
+  .profile-fild {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    grid: 15px;
+  }
+
+  .password {
+    position: relative;
+    .password-btn {
+      position: absolute;
+      top: 9px;
+      right: 17px;
+      width: 24px;
+      height: 24px;
+      border: none;
+      background-image: url(../images/pass-close.svg);
+
+      background-color: #ffffff;
+      &:active {
+        background-image: url(../images/pass-open.svg);
+      }
+    }
+  }
+}

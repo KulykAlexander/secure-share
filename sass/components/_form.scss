@@ -12,9 +12,11 @@
   //     }
   //   }
   @include tablet {
+    padding: 30px 8px;
+  }
+  @include desktop {
     padding: 40px 38px;
   }
-
   label {
     font-style: normal;
     font-weight: 400;
@@ -30,9 +32,11 @@
     padding: 12px 17px 14px 13px;
 
     @include tablet {
+      width: 350px;
+    }
+    @include desktop {
       width: 385px;
     }
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

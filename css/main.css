@@ -76,10 +76,16 @@ main {
 .form {
   display: block;
   margin: 0 auto;
-  padding: 40px 38px;
+  padding: 16px 5px;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 22px 26px rgba(199, 207, 227, 0.08);
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 40px 38px;
+  }
 }
 
 .form label {
@@ -92,7 +98,7 @@ main {
 }
 
 .form input {
-  width: 385px;
+  width: 350px;
   height: 45px;
   padding: 12px 17px 14px 13px;
   font-style: normal;
@@ -104,6 +110,12 @@ main {
   background: #ffffff;
   border: 1px solid var(--stoke);
   border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .form input {
+    width: 385px;
+  }
 }
 
 .form input:focus {
@@ -131,7 +143,7 @@ main {
 }
 
 .btn {
-  width: 385px;
+  width: 350px;
   height: 45px;
   font-family: inherit;
   font-weight: 600;
@@ -142,6 +154,12 @@ main {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 385px;
+  }
 }
 
 .registration-btn {
@@ -226,7 +244,13 @@ main {
 }
 
 .registration-form {
-  width: 461px;
+  width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-form {
+    width: 461px;
+  }
 }
 
 .registration-form .registration-data {

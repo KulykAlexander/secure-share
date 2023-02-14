@@ -1,5 +1,5 @@
 .btn {
-  width: 385px;
+  width: 350px;
   height: 45px;
   font-family: inherit;
   font-weight: 600;
@@ -11,6 +11,9 @@
   border-radius: 6px;
 
   cursor: pointer;
+  @include tablet {
+    width: 385px;
+  }
 }
 .registration-btn {
   color: var(--light-bg);

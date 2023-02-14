@@ -15,7 +15,11 @@
   }
 }
 .registration-form {
-  width: 461px;
+  width: 350px;
+
+  @include tablet {
+    width: 461px;
+  }
 
   .registration-data {
     display: flex;

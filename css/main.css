@@ -38,6 +38,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+main {
+  background: var(--light-bg);
+  height: 100vh;
+}
+
 .section {
   display: block;
   text-align: center;
@@ -173,7 +178,7 @@ body {
   color: var(--grey);
 }
 
-.header {
+.header .container {
   height: 94px;
   padding-top: 34px;
   text-align: center;
@@ -181,7 +186,7 @@ body {
   border-bottom: 1px solid var(--stoke);
 }
 
-.registration {
+.registration .container {
   padding-top: 100px;
   padding-bottom: 101px;
 }
@@ -251,8 +256,10 @@ body {
 }
 
 .footer .container {
-  height: 68px;
-  padding-top: 24px;
+  position: fixed;
+  bottom: 0;
+  height: 78px;
+  padding-top: 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -261,5 +268,12 @@ body {
   text-align: center;
   color: var(--light-bg);
   background: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    height: 68px;
+    padding-top: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,9 +3,10 @@ body {
   // color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
 }
-// main {
-//   background: #f7f9fe;
-// }
+main {
+  background: var(--light-bg);
+  height: 100vh;
+}
 .section {
   display: block;
   // margin: 0 auto;

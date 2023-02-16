@@ -144,6 +144,36 @@ main {
   color: var(--grey);
 }
 
+.form textarea {
+  width: 100%;
+  margin-bottom: 26px;
+  padding: 16px 16px;
+  resize: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+  background: #ffffff;
+  border: 1px solid var(--stoke);
+  border-radius: 6px;
+}
+
+.form textarea:focus {
+  outline: 1px solid var(--grey);
+}
+
+.form textarea::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+}
+
 .title {
   margin-bottom: 23px;
   font-style: normal;
@@ -205,6 +235,7 @@ main {
   margin-top: 16px;
   background: #fff;
   border: 2px solid #1e65e1;
+  color: var(--blue);
 }
 
 .back-btn .back-link {
@@ -225,6 +256,32 @@ main {
 
 .back-btn:disabled .back-link {
   color: var(--grey);
+}
+
+.question-btn {
+  display: block;
+  width: 37px;
+  height: 37px;
+  border: none;
+  background-image: url(../images/question.svg);
+  background-color: var(--light-bg);
+}
+
+.question-btn:hover, .question-btn:focus {
+  background-image: url(../images/question-hover.svg);
+}
+
+.question-btn:active {
+  background-image: url(../images/question-active.svg);
+}
+
+.question-btn:disabled {
+  background-image: url(../images/question-dis.svg);
+}
+
+.note-btn {
+  width: 250px;
+  margin-top: 0;
 }
 
 .header .container {
@@ -610,6 +667,122 @@ main {
 
 .profile-form .password .password-btn:active {
   background-image: url(../images/pass-open.svg);
+}
+
+.note .container {
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .note .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .note .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .note .container {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
+}
+
+.note-form {
+  width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .note-form {
+    width: 740px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .note-form {
+    width: 874px;
+  }
+}
+
+.note-form .note-form-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.note-form .note-form-head .note-title {
+  margin-bottom: 0;
+}
+
+.note-form .note-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .note-form .note-data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .note-form .note-data {
+    gap: 28px;
+  }
+}
+
+.note-form .note-fild {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+}
+
+.note-form .password {
+  position: relative;
+}
+
+.note-form .password .password-btn {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url(../images/pass-close.svg);
+  background-color: #ffffff;
+}
+
+.note-form .password .password-btn:active {
+  background-image: url(../images/pass-open.svg);
+}
+
+.note-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .note-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer .container {

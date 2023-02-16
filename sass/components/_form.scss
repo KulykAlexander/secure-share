@@ -73,4 +73,38 @@
       color: var(--grey);
     }
   }
+  textarea {
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 16px 16px;
+    resize: none;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+
+    color: var(--grey);
+
+    background: #ffffff;
+
+    border: 1px solid var(--stoke);
+    border-radius: 6px;
+
+    &:focus {
+      outline: 1px solid var(--grey);
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.04em;
+
+      color: var(--grey);
+    }
+  }
 }

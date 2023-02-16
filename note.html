@@ -71,46 +71,57 @@
       </div>
     </header>
     <main>
-      <section class="section profile">
+      <section class="section note">
         <div class="container">
-          <form class="profile-form form">
-            <h2 class="title">Profile Info</h2>
-            <div class="profile-data">
-              <div class="profile-fild">
-                <label for="">First Name*</label>
+          <form class="note-form form">
+            <div class="note-form-head">
+              <h2 class="note-title title">New note</h2>
+              <button type="button" class="question-btn"></button>
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols=""
+              rows="5"
+              placeholder="Write your note here..."
+            ></textarea>
+
+            <div class="note-data">
+              <div class="note-fild">
+                <label for="">Note self-destructs</label>
                 <input type="text" placeholder="Ozzy" required />
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">Last Name*</label>
                 <input type="text" placeholder="Osbourne" required />
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">Company Name*</label>
                 <input type="text" placeholder="Black Sabbath" required />
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">Phone Number</label>
                 <input type="tel" placeholder="+380| 123 4567" required />
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">Email*</label>
                 <input type="email" placeholder="osbourne@gmail.com" required />
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">Old Password</label>
                 <div class="password">
                   <input type="password" placeholder="Old Password*" required />
                   <button type="button" class="password-btn"></button>
                 </div>
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">New Password</label>
                 <div class="password">
                   <input type="password" placeholder="New Password*" required />
                   <button type="button" class="password-btn"></button>
                 </div>
               </div>
-              <div class="profile-fild">
+              <div class="note-fild">
                 <label for="">Confirm New Password</label>
                 <div class="password">
                   <input type="password" placeholder="Confirm New Password*" required />
@@ -118,8 +129,10 @@
                 </div>
               </div>
             </div>
-
-            <button type="submit" class="registration-btn btn">Save</button>
+            <div class="note-buttons">
+              <button type="button" class="registration-btn note-btn btn">Create Note</button>
+              <button type="button" class="back-btn note-btn btn">Show Options</button>
+            </div>
           </form>
         </div>
       </section>

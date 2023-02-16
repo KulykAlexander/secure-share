@@ -39,6 +39,7 @@
   margin-top: 16px;
   background: #fff;
   border: 2px solid #1e65e1;
+  color: var(--blue);
   .back-link {
     color: var(--blue);
   }
@@ -55,4 +56,27 @@
   &:disabled .back-link {
     color: var(--grey);
   }
+}
+.question-btn {
+  display: block;
+  width: 37px;
+  height: 37px;
+  border: none;
+  background-image: url(../images/question.svg);
+  background-color: var(--light-bg);
+
+  &:hover,
+  &:focus {
+    background-image: url(../images/question-hover.svg);
+  }
+  &:active {
+    background-image: url(../images/question-active.svg);
+  }
+  &:disabled {
+    background-image: url(../images/question-dis.svg);
+  }
+}
+.note-btn {
+  width: 250px;
+  margin-top: 0;
 }

@@ -25,12 +25,12 @@
   <body>
     <header class="header-profile">
       <div class="container">
-        <a href="" class="logo link">Secure Share</a>
+        <a href="" class="logo link"></a>
         <div class="menu">
           <nav class="menu-nav">
             <ul class="nav-list list">
-              <li><a href="">Home</a></li>
-              <li><a href="">Privacy</a></li>
+              <li><a href="" class="header-link link">Home</a></li>
+              <li><a href="" class="header-link link">Privacy</a></li>
             </ul>
           </nav>
           <div class="prof-info">
@@ -48,7 +48,26 @@
             >
           </div>
         </div>
-        <div class="mob-menu is-hidden"></div>
+        <div class="mob-menu">
+          <button type="button" class="menu-btn" data-menu-open></button>
+          <div class="user-icon">
+            <span>O</span>
+            <span>O</span>
+          </div>
+          <nav class="mob-nav is-hidden" data-menu>
+            <ul class="mob-nav-list list">
+              <li><a href="" class="header-link link">Home</a></li>
+              <li><a href="" class="header-link link">Privacy</a></li>
+              <li>
+                <a href="" class="link"
+                  ><button type="button" class="logout-btn mob-btn">
+                    <span class="logout-icon"></span>Logout
+                  </button></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -108,5 +127,7 @@
     <footer class="footer">
       <div class="container">&#169; 2023 - SecureShare.WebApplication - Privacy Policy</div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

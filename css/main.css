@@ -228,6 +228,8 @@ main {
 }
 
 .header .container {
+  display: flex;
+  justify-content: center;
   height: 94px;
   padding-top: 34px;
   text-align: center;
@@ -236,13 +238,15 @@ main {
 }
 
 .header-profile .container {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 94px;
   padding-top: 24px;
-  padding-right: 5px;
+  padding-right: 26px;
   padding-bottom: 18px;
-  padding-left: 5px;
+  padding-left: 20px;
   background: #f7f9fe;
   border-bottom: 1px solid var(--stoke);
 }
@@ -263,12 +267,19 @@ main {
 
 .logo {
   display: block;
+  width: 170px;
+  height: 44px;
   margin-right: 45px;
+  background-image: url(../images/logo-mob.svg);
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1366px) {
   .logo {
-    margin-right: 90px;
+    width: 262px;
+    height: 63px;
+    margin-right: 53px;
+    background-image: url(../images/logo.svg);
   }
 }
 
@@ -312,7 +323,25 @@ main {
   align-items: center;
 }
 
-.menu .user .user-icon {
+.menu .user-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+}
+
+.header-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+}
+
+.user-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,7 +351,7 @@ main {
   background-color: var(--blue);
 }
 
-.menu .user .user-icon span {
+.user-icon span {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -333,10 +362,17 @@ main {
 
 .logout-btn {
   display: flex;
+  align-items: center;
   gap: 10px;
   font-family: inherit;
   border: none;
   background: var(--light-bg);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  color: var(--grey);
   cursor: pointer;
 }
 
@@ -345,6 +381,49 @@ main {
   width: 15px;
   height: 15px;
   background-image: url(../images/logout.svg);
+}
+
+.mob-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.menu-btn {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../images/mob-menu.svg);
+  border: none;
+  background-color: var(--light-bg);
+}
+
+.mob-nav {
+  position: absolute;
+  top: 94px;
+  right: 0;
+  width: 337px;
+  height: 404px;
+  padding-top: 25px;
+  padding-left: 188px;
+  background-color: #fff;
+}
+
+.mob-btn {
+  background-color: #fff;
+  padding-left: 0;
+}
+
+.mob-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 }
 
 .registration .container {
@@ -511,7 +590,7 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  grid: 15px;
+  gap: 15px;
 }
 
 .profile-form .password {

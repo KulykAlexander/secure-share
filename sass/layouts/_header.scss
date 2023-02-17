@@ -1,8 +1,9 @@
 .header .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 94px;
-  padding-top: 34px;
+  // padding-top: 34px;
   text-align: center;
   background: #f7f9fe;
   border-bottom: 1px solid var(--stoke);
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 45px;
 
   height: 94px;
   padding-top: 24px;
@@ -26,24 +28,23 @@
     padding-right: 35px;
     padding-left: 35px;
   }
-  @include tablet {
+  @include desktop {
     padding-right: 67px;
     padding-left: 67px;
+    gap: 53px;
   }
 }
 .logo {
   display: block;
-  width: 170px;
+  width: 140px;
   height: 44px;
-  margin-right: 45px;
+
   background-image: url(../images/logo-mob.svg);
   background-repeat: no-repeat;
-  // background-size: cover;
+  background-size: contain;
   @include desktop {
-    width: 262px;
-    height: 63px;
-
-    margin-right: 53px;
+    width: 202px;
+    height: 64px;
 
     background-image: url(../images/logo.svg);
   }

@@ -1,5 +1,4 @@
 body {
-  // width: 1920px;
   font-family: 'Montserrat', sans-serif;
 }
 main {
@@ -8,14 +7,7 @@ main {
 }
 .section {
   display: block;
-  // margin: 0 auto;
-  // padding: 0 auto;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
-  // @include desktop {
-  //     padding-top: 94px;
-  //     padding-bottom: 94px;
-  // }
+
   text-align: center;
   background: var(--light-bg);
 }

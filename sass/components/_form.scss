@@ -29,7 +29,8 @@
   select {
     width: 340px;
     height: 45px;
-    padding: 12px 17px 14px 13px;
+    // padding: 3px 17px 14px 13px;
+    padding-left: 13px;
 
     @include tablet {
       width: 350px;

@@ -1,9 +1,9 @@
 .note .container {
   padding-top: 15px;
-  padding-bottom: 63px;
+  padding-bottom: 68px;
   @include mobile {
     padding-top: 30px;
-    padding-bottom: 63px;
+    padding-bottom: 68px;
   }
   @include tablet {
     padding-top: 60px;
@@ -31,6 +31,26 @@
     .note-title {
       margin-bottom: 0;
     }
+  }
+  .faq {
+    width: 100%;
+    padding: 16px 16px;
+    margin-bottom: 10px;
+
+    text-align: start;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+
+    color: var(--grey);
+
+    background: #ffffff;
+
+    border: 1px solid var(--stoke);
+    border-radius: 6px;
   }
   .note-data {
     display: flex;
@@ -122,6 +142,8 @@
   }
   .checkbox:checked + .check-ladel .check-icon {
     background-image: url(../images/check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .password {
     position: relative;

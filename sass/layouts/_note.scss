@@ -47,6 +47,19 @@
     }
     // scale: 0;
   }
+  .note-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    @include desktop {
+      gap: 28px;
+    }
+  }
   .note-fild {
     display: flex;
     flex-direction: column;

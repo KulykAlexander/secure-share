@@ -1,9 +1,9 @@
 .note .container {
   padding-top: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 63px;
   @include mobile {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 63px;
   }
   @include tablet {
     padding-top: 60px;
@@ -60,6 +60,18 @@
       gap: 28px;
     }
   }
+  .option-title {
+    margin-bottom: 14px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2px;
+
+    letter-spacing: 0.04em;
+
+    color: var(--black);
+  }
   .note-fild {
     display: flex;
     flex-direction: column;
@@ -68,7 +80,49 @@
 
     gap: 15px;
   }
+  .note-fild-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+    .check-ladel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 19px;
+      width: 100%;
 
+      .check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 27px;
+        border: 1px solid var(--stoke);
+        border-radius: 6px;
+        // margin-right: 19px;
+      }
+
+      .check-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.29;
+
+        letter-spacing: 0.04em;
+
+        text-align: start;
+
+        color: var(--midle-grey);
+      }
+    }
+  }
+  .check-icon {
+    width: 9px;
+    height: 13px;
+  }
+  .checkbox:checked + .check-ladel .check-icon {
+    background-image: url(../images/check.svg);
+  }
   .password {
     position: relative;
     .password-btn {

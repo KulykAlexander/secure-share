@@ -67,6 +67,19 @@ main {
   overflow: hidden;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -101,6 +114,41 @@ main {
   line-height: 1.9;
   letter-spacing: 0.04em;
   color: var(--black);
+}
+
+.form select {
+  width: 340px;
+  height: 45px;
+  padding: 12px 17px 14px 13px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+  background: #ffffff;
+  border: 1px solid var(--stoke);
+  border-radius: 6px;
+  vertical-align: middle;
+  appearance: none;
+  background: url(../images/select.svg) no-repeat right;
+  background-position-x: calc(100% - 13px);
+}
+
+@media screen and (min-width: 768px) {
+  .form select {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .form select {
+    width: 385px;
+  }
+}
+
+.form select:focus {
+  outline: 1px solid var(--grey);
 }
 
 .form input {
@@ -582,20 +630,20 @@ main {
 
 .profile .container {
   padding-top: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 63px;
 }
 
 @media screen and (min-width: 480px) {
   .profile .container {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 63px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .profile .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 63px;
+    padding-bottom: 63px;
   }
 }
 
@@ -672,13 +720,13 @@ main {
 
 .note .container {
   padding-top: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 63px;
 }
 
 @media screen and (min-width: 480px) {
   .note .container {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 63px;
   }
 }
 
@@ -764,12 +812,65 @@ main {
   }
 }
 
+.note-form .option-title {
+  margin-bottom: 14px;
+  text-align: start;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2px;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+
 .note-form .note-fild {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   gap: 15px;
+}
+
+.note-form .note-fild-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-form .note-fild-check .check-ladel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+  width: 100%;
+}
+
+.note-form .note-fild-check .check-ladel .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 27px;
+  border: 1px solid var(--stoke);
+  border-radius: 6px;
+}
+
+.note-form .note-fild-check .check-ladel .check-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.29;
+  letter-spacing: 0.04em;
+  text-align: start;
+  color: var(--midle-grey);
+}
+
+.note-form .check-icon {
+  width: 9px;
+  height: 13px;
+}
+
+.note-form .checkbox:checked + .check-ladel .check-icon {
+  background-image: url(../images/check.svg);
 }
 
 .note-form .password {

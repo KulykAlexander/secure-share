@@ -26,6 +26,39 @@
 
     color: var(--black);
   }
+  select {
+    width: 340px;
+    height: 45px;
+    padding: 12px 17px 14px 13px;
+
+    @include tablet {
+      width: 350px;
+    }
+    @include desktop {
+      width: 385px;
+    }
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+
+    color: var(--grey);
+
+    background: #ffffff;
+
+    border: 1px solid var(--stoke);
+    border-radius: 6px;
+    &:focus {
+      outline: 1px solid var(--grey);
+    }
+    vertical-align: middle;
+    appearance: none;
+    background: url(../images/select.svg) no-repeat right;
+    // background: url(../images/modal/select-up.svg) no-repeat right;
+    background-position-x: calc(100% - 13px);
+  }
+
   input {
     width: 340px;
     height: 45px;

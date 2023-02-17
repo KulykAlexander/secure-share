@@ -94,7 +94,7 @@
 
             <div class="note-data">
               <div class="note-detail">
-                <h3>Note self-destructs</h3>
+                <h3 class="option-title">Note self-destructs</h3>
                 <div class="note-options">
                   <div class="note-fild">
                     <label for="">After Read It</label>
@@ -104,14 +104,25 @@
                       <option value="">30 Days From Now</option>
                     </select>
                   </div>
-                  <div class="note-fild">
-                    <input type="checkbox" class="checkbox" />
-                    <p>Do not ask for confirmation before showing and destroying the note.</p>
+                  <div class="note-fild-check">
+                    <input
+                      type="checkbox"
+                      name="ask"
+                      value="ask"
+                      id="ask"
+                      class="checkbox visually-hidden"
+                    />
+                    <label for="ask" class="check-ladel">
+                      <div class="check"><span class="check-icon"></span></div>
+                      <p class="check-text">
+                        Do not ask for confirmation before showing and destroying the note.
+                      </p>
+                    </label>
                   </div>
                 </div>
               </div>
               <div class="note-detail">
-                <h3>Manual password</h3>
+                <h3 class="option-title">Manual password</h3>
                 <div class="note-options">
                   <div class="note-fild">
                     <label for="">Enter a custom password to encrypt the note</label>
@@ -134,7 +145,7 @@
                 </div>
               </div>
               <div class="note-detail">
-                <h3>Destruction notification</h3>
+                <h3 class="option-title">Destruction notification</h3>
                 <div class="note-options">
                   <div class="note-fild">
                     <label for="">E-mail to notify when note is destroyed</label>

@@ -6,6 +6,8 @@
   --blue: #1e65e1;
   --midle-grey: #73859b;
   --red: #eb5757;
+  --red-hover: #f02e2e;
+  --red-active: #f70707;
 }
 
 h1,
@@ -335,6 +337,31 @@ main {
 
 .destroy-btn {
   width: 287px;
+  margin-top: 0;
+}
+
+.destroys-btn {
+  width: 245px;
+  margin-top: 0;
+  color: #fff;
+  background: var(--red);
+  border-radius: 6px;
+}
+
+.destroys-btn:hover, .destroys-btn:focus {
+  background: var(--red-hover);
+}
+
+.destroys-btn:active {
+  background: var(--red-active);
+}
+
+.destroys-btn:disabled {
+  background: var(--grey);
+}
+
+.note-btn-link {
+  width: 176px;
   margin-top: 0;
 }
 
@@ -1010,9 +1037,7 @@ main {
 .note-form .note-link,
 .note-form .note-warning {
   width: 100%;
-  height: 45px;
-  padding-left: 17px;
-  padding-top: 7px;
+  padding: 13px 17px;
   text-align: start;
   font-style: normal;
   font-weight: 400;
@@ -1034,6 +1059,10 @@ main {
   border: none;
 }
 
+.note-form .note-warning span {
+  font-weight: 500;
+}
+
 .note-link-buttons {
   display: flex;
   flex-direction: column;
@@ -1043,6 +1072,21 @@ main {
 
 @media screen and (min-width: 768px) {
   .note-link-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.note-link-buttons .link-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .note-link-buttons .link-buttons {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

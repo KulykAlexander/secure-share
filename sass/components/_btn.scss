@@ -84,3 +84,28 @@
   width: 287px;
   margin-top: 0;
 }
+
+.destroys-btn {
+  width: 245px;
+  margin-top: 0;
+
+  color: #fff;
+
+  background: var(--red);
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    background: var(--red-hover);
+  }
+  &:active {
+    background: var(--red-active);
+  }
+  &:disabled {
+    background: var(--grey);
+  }
+}
+.note-btn-link {
+  width: 176px;
+  margin-top: 0;
+}

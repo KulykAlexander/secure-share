@@ -17,7 +17,7 @@
 .registration-form {
   width: 350px;
 
-  @include tablet {
+  @include desktop {
     width: 461px;
   }
 
@@ -61,8 +61,11 @@
   .pre-submit-link {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.9;
+    @include desktop {
+      font-size: 16px;
+    }
 
     color: var(--blue);
     &:hover,

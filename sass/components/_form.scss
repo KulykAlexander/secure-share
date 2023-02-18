@@ -11,9 +11,9 @@
   //       outline: 1px solid #eb5757;
   //     }
   //   }
-  @include tablet {
-    padding: 30px 8px;
-  }
+  // @include tablet {
+  //   padding: 30px 8px;
+  // }
   @include desktop {
     padding: 40px 38px;
   }
@@ -22,7 +22,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.04em;
+    // letter-spacing: 0.04em;
 
     color: var(--black);
   }
@@ -32,9 +32,9 @@
     // padding: 3px 17px 14px 13px;
     padding-left: 13px;
 
-    @include tablet {
-      width: 350px;
-    }
+    // @include tablet {
+    //   width: 350px;
+    // }
     @include desktop {
       width: 385px;
     }
@@ -65,9 +65,9 @@
     height: 45px;
     padding: 12px 17px 14px 13px;
 
-    @include tablet {
-      width: 350px;
-    }
+    // @include tablet {
+    //   width: 350px;
+    // }
     @include desktop {
       width: 385px;
     }

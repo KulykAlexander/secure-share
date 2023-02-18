@@ -52,20 +52,22 @@
     border: 1px solid var(--stoke);
     border-radius: 6px;
   }
-  .note-data {
+}
+.note-data {
+  display: flex;
+  height: 0;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+
+  // scale: (1 1);
+  transition: height 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .note-detail {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 25px;
-    @include tablet {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    @include desktop {
-      gap: 28px;
-    }
-    // scale: 0;
+    gap: 14px;
+    // margin-bottom: 25px;
   }
   .note-options {
     display: flex;
@@ -81,7 +83,6 @@
     }
   }
   .option-title {
-    margin-bottom: 14px;
     text-align: start;
     font-style: normal;
     font-weight: 600;
@@ -145,6 +146,10 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  .pwd-buttons {
+    display: flex;
+  }
   .password {
     position: relative;
     .password-btn {
@@ -163,6 +168,7 @@
     }
   }
 }
+
 .note-buttons {
   display: flex;
   flex-direction: column;

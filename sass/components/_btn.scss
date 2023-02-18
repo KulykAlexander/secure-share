@@ -109,3 +109,44 @@
   width: 176px;
   margin-top: 0;
 }
+.pwd-btn {
+  width: 170px;
+  height: 45px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--midle-grey);
+
+  border: 1px solid var(--midle-grey);
+
+  background: var(--light-bg);
+
+  @include tablet {
+    width: 175px;
+  }
+  &:disabled {
+    color: #cad0df;
+    border: 1px solid #d4dae9;
+  }
+}
+.generate {
+  border-radius: 6px 0px 0px 6px;
+
+  @include desktop {
+    width: 194px;
+  }
+}
+
+.copy {
+  border-radius: 0px 6px 6px 0px;
+
+  @include desktop {
+    width: 192px;
+  }
+}

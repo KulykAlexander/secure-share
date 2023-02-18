@@ -84,7 +84,7 @@
               <h2 class="note-title title">New note</h2>
               <button type="button" class="question-btn"></button>
             </div>
-            <div class="faq">
+            <div class="faq visually-hidden">
               With Secure Share you can send notes that will self-destruct after being read.<br />1.
               Write the note below, encrypt it and get a link. <br />2. Send the link to whom you
               want to read the note. <br />3. The note will self-destruct after being read by the
@@ -99,12 +99,11 @@
               placeholder="Write your note here..."
             ></textarea>
 
-            <div class="note-data">
+            <div class="note-data is-hidden" data-options>
               <div class="note-detail">
                 <h3 class="option-title">Note self-destructs</h3>
                 <div class="note-options">
                   <div class="note-fild">
-                    <!-- <label for="">After Read It</label> -->
                     <select name="" id="">
                       <option value="">After Read It</option>
                       <option value="">1 Hour From Now</option>
@@ -146,9 +145,9 @@
                       <input type="password" placeholder="" />
                       <button type="button" class="password-btn"></button>
                     </div>
-                    <div>
-                      <button type="button" class="">Generate pwd</button>
-                      <button type="button" class="">Copy pwd</button>
+                    <div class="pwd-buttons">
+                      <button type="button" class="pwd-btn generate">Generate pwd</button>
+                      <button type="button" class="pwd-btn copy" disabled>Copy pwd</button>
                     </div>
                   </div>
                 </div>
@@ -163,7 +162,7 @@
                   <div class="note-fild">
                     <label for="">Reference name for the note (optional)</label>
                     <div class="password">
-                      <input type="password" placeholder="After Read It" required />
+                      <input type="text" placeholder="After Read It" required />
                       <button type="button" class="password-btn"></button>
                     </div>
                   </div>
@@ -172,8 +171,13 @@
             </div>
 
             <div class="note-buttons">
-              <button type="button" class="registration-btn note-btn btn">Create Note</button>
-              <button type="button" class="back-btn note-btn btn">Show Options</button>
+              <a href="./note-link.html" class="link"
+                ><button type="button" class="registration-btn note-btn btn">Create Note</button></a
+              >
+
+              <button type="button" class="back-btn note-btn btn" data-options-open>
+                <span>Show</span> Options
+              </button>
             </div>
           </form>
         </div>
@@ -184,5 +188,7 @@
     </footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/question.js"></script>
+    <script src="./js/note-options.js"></script>
   </body>
 </html>

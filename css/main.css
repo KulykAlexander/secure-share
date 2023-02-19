@@ -90,7 +90,7 @@ main {
   margin: 0 auto;
 }
 
-form {
+.form {
   display: block;
   margin: 0 auto;
   padding: 16px 5px;
@@ -100,12 +100,12 @@ form {
 }
 
 @media screen and (min-width: 1366px) {
-  form {
+  .form {
     padding: 40px 38px;
   }
 }
 
-form label {
+.form label {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +113,7 @@ form label {
   color: var(--black);
 }
 
-form select {
+.form select {
   width: 340px;
   height: 45px;
   padding-left: 13px;
@@ -133,16 +133,16 @@ form select {
 }
 
 @media screen and (min-width: 1366px) {
-  form select {
+  .form select {
     width: 385px;
   }
 }
 
-form select:focus {
+.form select:focus {
   outline: 1px solid var(--grey);
 }
 
-form select option {
+.form select option {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
@@ -154,12 +154,12 @@ form select option {
   outline: 1px solid var(--stoke);
 }
 
-form select option:hover, form select option:focus {
+.form select option:hover, .form select option:focus {
   color: #fff;
   background: var(--blue);
 }
 
-form input {
+.form input {
   width: 340px;
   height: 45px;
   padding: 12px 17px 14px 13px;
@@ -175,16 +175,16 @@ form input {
 }
 
 @media screen and (min-width: 1366px) {
-  form input {
+  .form input {
     width: 385px;
   }
 }
 
-form input:focus {
+.form input:focus {
   outline: 1px solid var(--grey);
 }
 
-form input::placeholder {
+.form input::placeholder {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -194,7 +194,7 @@ form input::placeholder {
   color: var(--grey);
 }
 
-form textarea {
+.form textarea {
   width: 100%;
   margin-bottom: 26px;
   padding: 16px 16px;
@@ -210,11 +210,11 @@ form textarea {
   border-radius: 6px;
 }
 
-form textarea:focus {
+.form textarea:focus {
   outline: 1px solid var(--grey);
 }
 
-form textarea::placeholder {
+.form textarea::placeholder {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -271,10 +271,6 @@ form textarea::placeholder {
 
 .registration-btn:active {
   background: #0d4ab4;
-}
-
-.registration-btn:active .reg-input:required {
-  outline: 1px solid #eb5757;
 }
 
 .registration-btn:disabled {

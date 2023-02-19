@@ -856,7 +856,6 @@ main {
 }
 
 .note-form .faq {
-  width: 100%;
   padding: 16px 16px;
   margin-bottom: 10px;
   text-align: start;
@@ -1065,7 +1064,6 @@ main {
 }
 
 .note-form .faq-note-link {
-  width: 100%;
   padding: 16px 16px;
   margin-bottom: 10px;
   text-align: start;

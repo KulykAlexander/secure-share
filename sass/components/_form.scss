@@ -1,4 +1,4 @@
-.form {
+form {
   display: block;
   margin: 0 auto;
   padding: 16px 5px;
@@ -17,7 +17,7 @@
   @include desktop {
     padding: 40px 38px;
   }
-  label {
+  & label {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -26,7 +26,7 @@
 
     color: var(--black);
   }
-  select {
+  & select {
     width: 340px;
     height: 45px;
     // padding: 3px 17px 14px 13px;
@@ -58,9 +58,29 @@
     background: url(../images/select.svg) no-repeat right;
     // background: url(../images/modal/select-up.svg) no-repeat right;
     background-position-x: calc(100% - 13px);
+
+    & option {
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.04em;
+      color: var(--grey);
+
+      background: #ffffff;
+
+      outline: 1px solid var(--stoke);
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background: var(--blue);
+      }
+    }
   }
 
-  input {
+  & input {
     width: 340px;
     height: 45px;
     padding: 12px 17px 14px 13px;
@@ -107,7 +127,7 @@
       color: var(--grey);
     }
   }
-  textarea {
+  & textarea {
     width: 100%;
     margin-bottom: 26px;
     padding: 16px 16px;

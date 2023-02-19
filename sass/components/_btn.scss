@@ -27,6 +27,9 @@
   }
   &:active {
     background: #0d4ab4;
+    // .reg-input:required {
+    //   outline: 1px solid #eb5757;
+    // }
   }
   &:disabled {
     background: var(--grey);

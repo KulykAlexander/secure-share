@@ -80,6 +80,7 @@
     background: var(--light-bg);
 
     border: 1px solid var(--stoke);
+    overflow-wrap: break-word;
   }
   .note-warning {
     color: var(--red);

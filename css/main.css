@@ -1081,6 +1081,7 @@ main {
   color: var(--midle-grey);
   background: var(--light-bg);
   border: 1px solid var(--stoke);
+  overflow-wrap: break-word;
 }
 
 .note-form .note-warning {
